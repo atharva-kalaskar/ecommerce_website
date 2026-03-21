@@ -1,15 +1,16 @@
 # 🛒 E-Commerce Website
 
-A full-stack e-commerce web application built using React (frontend) and Node.js + Express (backend) with MySQL database.
+A full-stack E-Commerce web application built using React (frontend) and Node.js + Express (backend) with MySQL database.
 
 ---
 
 ## 🚀 Features
 
-- User Authentication (Login/Register)
-- Product Listing
-- Add to Cart
-- Backend API Integration
+- User Authentication (Login / Register)
+- Product Management
+- Add to Cart functionality
+- REST API backend
+- MySQL database integration
 
 ---
 
@@ -24,25 +25,65 @@ A full-stack e-commerce web application built using React (frontend) and Node.js
 ## 📂 Project Structure
 
 ecommerce_website/
-├── client/
-├── server/
+
+├── client/        # React frontend  
+├── server/        # Node.js backend  
+├── database/      # SQL files (schema & queries)  
+├── .gitignore  
+└── README.md  
 
 ---
 
-## ⚙️ Setup
+## ⚙️ Setup Instructions
 
-### Backend
+### 1️⃣ Clone the repository
+
+git clone https://github.com/atharva-kalaskar/ecommerce_website.git  
+cd ecommerce_website  
+
+---
+
+### 2️⃣ Setup Backend
+
 cd server  
 npm install  
+
+Create a `.env` file inside `server/`:
+
+PORT=5000  
+DB_HOST=your_host  
+DB_USER=your_user  
+DB_PASSWORD=your_password  
+DB_NAME=your_database  
+
+Start backend:
+
 npm start  
 
-### Frontend
+---
+
+### 3️⃣ Setup Frontend
+
 cd client  
 npm install  
 npm start  
 
 ---
 
-## 🔐 Note
+## 🗄️ Database Setup
 
-Environment variables are stored in `.env` (not uploaded to GitHub)
+- Import `database/ecommerce_cp.sql` into MySQL
+- Use queries from `query.txt` if needed
+
+---
+
+## 🔐 Important Note
+
+- `.env` file is not uploaded for security reasons  
+- Never expose database credentials publicly  
+
+---
+
+## 📌 Author
+
+- GitHub: https://github.com/atharva-kalaskar
