@@ -169,30 +169,30 @@ UNLOCK TABLES;
 -- Table structure for table `searches`
 --
 
-DROP TABLE IF EXISTS `searches`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `searches` (
-  `search_id` int NOT NULL AUTO_INCREMENT,
-  `user_id` int NOT NULL,
-  `product_id` int NOT NULL,
-  `searched_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`search_id`),
-  KEY `user_id` (`user_id`),
-  KEY `product_id` (`product_id`),
-  CONSTRAINT `searches_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE CASCADE,
-  CONSTRAINT `searches_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
+-- DROP TABLE IF EXISTS `searches`;
+-- /*!40101 SET @saved_cs_client     = @@character_set_client */;
+-- /*!50503 SET character_set_client = utf8mb4 */;
+-- CREATE TABLE `searches` (
+--   `search_id` int NOT NULL AUTO_INCREMENT,
+--   `user_id` int NOT NULL,
+--   `product_id` int NOT NULL,
+--   `searched_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+--   PRIMARY KEY (`search_id`),
+--   KEY `user_id` (`user_id`),
+--   KEY `product_id` (`product_id`),
+--   CONSTRAINT `searches_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE CASCADE,
+--   CONSTRAINT `searches_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`) ON DELETE CASCADE
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+-- /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `searches`
---
+-- --
+-- -- Dumping data for table `searches`
+-- --
 
-LOCK TABLES `searches` WRITE;
-/*!40000 ALTER TABLE `searches` DISABLE KEYS */;
-/*!40000 ALTER TABLE `searches` ENABLE KEYS */;
-UNLOCK TABLES;
+-- LOCK TABLES `searches` WRITE;
+-- /*!40000 ALTER TABLE `searches` DISABLE KEYS */;
+-- /*!40000 ALTER TABLE `searches` ENABLE KEYS */;
+-- UNLOCK TABLES;
 
 --
 -- Table structure for table `users`
